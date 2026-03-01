@@ -1,0 +1,74 @@
+[package]
+name = "apimanager"
+version = "0.1.0"
+description = "AI API Hub Manager - Multi-site API aggregation proxy"
+authors = ["All API Hub"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "apimanager_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "^2.2.5", features = [] }
+
+[dependencies]
+# Tauri
+tauri = { version = "^2.2.5", features = ["tray-icon", "image-png"] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2.6.0"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# HTTP server (proxy)
+axum = { version = "0.7", features = ["multipart"] }
+tower = { version = "0.4", features = ["util"] }
+tower-http = { version = "0.5", features = ["cors", "trace", "fs"] }
+hyper = { version = "1", features = ["full"] }
+hyper-util = { version = "0.1", features = ["full"] }
+
+# HTTP client (upstream)
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "socks", "rustls-tls"] }
+bytes = "1.5"
+http-body-util = "0.1"
+
+# Concurrency
+dashmap = "6.1"
+tokio-util = "0.7"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "time"] }
+tracing-appender = "0.2.4"
+tracing-log = "0.2.0"
+
+# Error handling
+thiserror = "2.0"
+anyhow = "1.0"
+
+# Utilities
+chrono = "0.4"
+dirs = "5.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+futures = "0.3"
+async-stream = "0.3"
+rand = "0.8"
+regex = "1"
+toml_edit = "0.22"
+
+# Database
+rusqlite = { version = "0.32", features = ["bundled"] }
+once_cell = "1.19"
+
+# LevelDB (for reading Chrome extension storage)
+rusty-leveldb = "4"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

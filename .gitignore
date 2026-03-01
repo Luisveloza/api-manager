@@ -1,0 +1,10 @@
+node_modules/
+dist/
+target/
+logs/
+reference-project/
+docs/
+
+# Personal data (account backups, tokens, etc.)
+src-tauri/fixtures/
+data/
